@@ -8,8 +8,8 @@ spring:
     active: native
   application:
     name: jungle-config
-  security:
-    user:
-      password: 123
+#  security:
+#    user:
+#      password: 123
 server:
   port: 8888

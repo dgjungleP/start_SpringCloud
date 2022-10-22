@@ -1,0 +1,20 @@
+server:
+  port: ${EUREKA_PORT}
+spring:
+  application:
+    name: eureka-server
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      #      服务注册中心的配置内容，指定服务注册中心的位置
+      defaultZone: ${SCAFFOLD_EUREKA_ZONE_HOSTS}
+  instance:
+    hostname: ${EUREKA_ZONE_HOST}
+  server:
+    #    开启自我保护
+    enable-self-preservation: true
+    #    扫描失败的间隔事件 单位毫秒 （为了清理无效节点）
+    eviction-interval-timer-in-ms: 60000

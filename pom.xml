@@ -35,5 +35,7 @@
     <modules>
         <module>spring_config</module>
         <module>client/simple_config_client</module>
+        <module>spring_eureka</module>
+        <module>client/uaa-provider</module>
     </modules>
 </project>
