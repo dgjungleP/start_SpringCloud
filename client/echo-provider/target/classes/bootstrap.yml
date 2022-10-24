@@ -1,12 +1,12 @@
 spring:
   application:
-    name: uaa-provider
+    name: echo-provider
   cloud:
     config:
       uri: ${CONFIG_HOST}
       fail-fast: true
 server:
-  port: 9966
+  port: 9968
   servlet:
-    context-path: /uaa-provider
+    context-path: /echo-provider
 

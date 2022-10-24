@@ -8,8 +8,25 @@ spring:
     active: native
   application:
     name: jungle-config
-#  security:
-#    user:
-#      password: 123
 server:
   port: 8888
+management:
+  endpoints:
+    jmx:
+      exposure:
+        include: "*"
+    web:
+      exposure:
+        include: "*"
+      cors:
+        allowed-origins: "*"
+        allowed-methods: GET,POST
+    enabled-by-default: true
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: ${SCAFFOLD_EUREKA_ZONE_HOSTS}
+    register-with-eureka: true
+    fetch-registry: true
