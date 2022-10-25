@@ -38,5 +38,7 @@
         <module>spring_eureka</module>
         <module>client/uaa-provider</module>
         <module>client/echo-provider</module>
+        <module>client/echo-provider02</module>
+        <module>client/echo-provider03</module>
     </modules>
 </project>

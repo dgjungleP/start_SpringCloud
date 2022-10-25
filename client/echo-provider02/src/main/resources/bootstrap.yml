@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: echo-provider
+  cloud:
+    config:
+      uri: ${CONFIG_HOST}
+      fail-fast: true
+server:
+  port: 9971
+  servlet:
+    context-path: /echo-provider
+
