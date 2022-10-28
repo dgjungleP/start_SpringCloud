@@ -7,4 +7,14 @@ spring:
       fail-fast: true
 server:
   port: 9975
-
+zuul:
+  ribbon-isolation-strategy: thread
+  host:
+    connect-timeout-millis: 600000
+    socket-timeout-millis: 600000
+  routes:
+    uaa-server:
+      path: /uaa-provider/**
+      serviceId: uaa-provider
+      strip-prefix: false
+  sensitive-headers:
