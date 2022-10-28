@@ -10,3 +10,6 @@ server:
   servlet:
     context-path: /uaa-provider
 
+feign:
+  hystrix:
+    enabled: true
